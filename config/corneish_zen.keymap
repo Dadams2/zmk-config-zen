@@ -204,9 +204,9 @@
      &kp TILDE     &kp Z         &kp LBRC      &kp RBRC         &kp V         &kp LBKT          &kp RBKT   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT     &kp PIPE
 // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                              &mt LGUI TAB  &mt LCTRL ESC  &lt NUM RET      &am RSHFT SPACE &mt RSHFT TAB &mt RALT DEL
+                                              &mt LGUI TAB  &mt LCTRL ESC  &lt NAV RET      &am RSHFT SPACE &mt RSHFT TAB &mt RALT DEL
 #else
-                                                            &mt LCTRL ESC  &lt NUM RET      &lt SYM SPACE &mt RSHFT TAB
+                                                            &mt LCTRL ESC  &lt NAV RET      &lt SYM SPACE &mt RSHFT TAB
 #endif
 //                                                         ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
