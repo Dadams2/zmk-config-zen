@@ -16,6 +16,8 @@
 
 /* #include "combos.dtsi" */
 
+#define THREE_THUMBS
+
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
