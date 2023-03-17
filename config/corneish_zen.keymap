@@ -159,11 +159,11 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp 1          &kp 2        &kp 3         &kp 3         &kp 4         &kp 5             &kp 6         &kp 7         &kp 8         &kp 9         &kp 0         &kp BSPC
+     &kp ESC          &kp N1        &kp N2      &kp N3         &kp N4         &kp N5          &kp N6         &kp N7         &kp N8      &kp N9         &kp N0         &kp BSPC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LSHIFT     &kp LEFT     &kp UP        &kp DOWN      &kp RIGHT     &kp LPAR          &kp RPAR      &kp 4         &kp 5         &kp 6         &am RGUI SEMI   &kp SQT
+     &kp LSHIFT     &kp LEFT     &kp UP        &kp DOWN      &kp RIGHT     &kp LPAR          &kp RPAR      &kp N4         &kp N5         &kp N6         &am RGUI SEMI   &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TILDE     &kp Z         &kp LBRC      &kp RBRC         &kp V         &kp LBKT          &kp RBKT   &kp 1         &kp 2         &kp 3         &kp SLASH     &kp PIPE
+     &kp TILDE     &kp Z         &kp LBRC      &kp RBRC         &kp V         &kp LBKT          &kp RBKT   &kp N1         &kp N2         &kp N3         &kp SLASH     &kp PIPE
 // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
                                               &mt LGUI TAB  &mt LCTRL ESC  &lt NAV RET      &am RSHFT SPACE &mt RSHFT TAB &mt RALT DEL
