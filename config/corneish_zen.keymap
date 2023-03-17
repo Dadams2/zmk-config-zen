@@ -14,12 +14,6 @@
 #define NAV 4
 #define FUN 5
 
-// Desktop and tab navigation shortcuts
-#define D_LT   LC(LG(LEFT))
-#define D_RT   LC(LG(RIGHT))
-#define TAB_RT LC(TAB)
-#define TAB_LT LC(LS(TAB))
-
 /* #include "combos.dtsi" */
 
 &mt {
@@ -30,10 +24,6 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <150>;
-};
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
 / {
@@ -82,17 +72,6 @@
             if-layers = <NAV SYM>;
             then-layer = <FUN>;
         };
-    };
-
-    macros {
-        ZMK_MACRO(inv_qm,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
-                , <&macro_release &kp LALT>;
-        )
     };
 
     keymap {
