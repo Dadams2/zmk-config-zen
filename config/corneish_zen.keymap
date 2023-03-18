@@ -34,8 +34,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ALPHA_MT";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <140>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -43,8 +43,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ALPHA_SFT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <140>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -90,7 +90,7 @@
      &kp TILDE     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH     &kp PIPE
 // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
-                                              &lt LGUI FUN  &mt LSHIFT ESC  &lt NAV RET      &lt SYM SPACE &mt RSHFT TAB &mt RALT DEL
+                                              &lt LGUI FUN  &mt LCTRL ESC  &lt NAV RET      &lt SYM SPACE &mt RSHFT TAB &mt RALT DEL
 #else
                                                             &mt LCTRL ESC  &lt NAV RET      &lt SYM SPACE &mt RSHFT TAB
 #endif
@@ -178,11 +178,11 @@
             label = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F1          &kp F2        &kp F3         &kp F3         &kp F4         &kp F5       &kp F6         &kp F7         &kp F8         &kp F9       &kp F10     &kp BSPC
+     &kp F12          &kp F1        &kp F2         &kp F3         &kp F4         &kp F5       &kp F6         &kp F7         &kp F8         &kp F9       &kp F10     &kp F11
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3 &bt BT_SEL 4         &kp HOME   &kp PG_DN      &kp PG_UP     &kp END       &am RGUI SEMI   &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TILDE     &kp Z         &kp LBRC      &kp RBRC         &kp V         &kp LBKT          &kp RBKT   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT     &kp PIPE
+     &kp TILDE     &kp Z         &kp LBRC      &kp RBRC       &tog GME      &kp LBKT          &kp RBKT   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT     &kp PIPE
 // ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 #ifdef THREE_THUMBS
                                               &mt LGUI TAB  &mt LCTRL ESC  &lt NAV RET      &am RSHFT SPACE &mt RSHFT TAB &mt RALT DEL
