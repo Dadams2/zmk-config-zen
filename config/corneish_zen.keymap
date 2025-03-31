@@ -11,7 +11,7 @@
 
 &mt {
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <190>;
 };
 
 &lt {
@@ -20,26 +20,6 @@
 };
 
 / {
-    behaviors {
-        am: alpha_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALPHA_MT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        as: alpha_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALPHA_SFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -54,7 +34,7 @@
    &kp ESC  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &am LGUI A &am LALT S &am LSHIFT D &am LCTL F &kp G   &kp H &am RCTRL J  &am RSHFT K     &am LALT L   &am LGUI SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LGUI
-                &mo 1 &mt LSHFT ESC &mt LCTRL RET   &mt RCTRL SPACE &mt RSHFT TAB &mo 2
+                &kp LSFT  &lt 2 ESC &mt LCTRL RET   &mt RCTRL SPACE &mt RSHFT TAB &mo 1
                         >;
                 };
                 lower_layer {
@@ -66,9 +46,9 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LCTL &kp LEFT &kp DOWN &kp UP &kp RIGH  &trans   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp RET      &kp SPACE  &trans   &kp RALT
+                          	        &kp LGUI     &mo 3       &kp RET      &kp SPACE  &trans   &kp RALT
                         >;
                 };
 
